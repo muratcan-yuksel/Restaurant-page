@@ -1,1 +1,1 @@
-(()=>{"use strict";alert("yow pow"),foo})();
+(()=>{"use strict";!function(){console.log("fooo");const e=document.createElement("IMG");e.setAttribute("src","/TOP/Restaurant-page/pics/header.png"),document.body.appendChild(e)}(),foo})();

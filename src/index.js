@@ -1,1 +1,1 @@
-import foo from "./layout"
+import foo from './layout'
