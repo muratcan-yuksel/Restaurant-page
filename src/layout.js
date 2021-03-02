@@ -59,25 +59,25 @@ const divTabs = () => {
 
 
 
-    //   const labels = () => {
-    //     const label1 = document.createElement("LABEL");
-    //     label1.textContent="One";
+      const labels = () => {
+        const label1 = document.createElement("LABEL");
+        label1.textContent="One";
     
-    //     const radio1= document.createElement("INPUT");
-    //     radio1.setAttribute("type", "radio");
-    //     radio1.checked="checked";
+        const radio1= document.createElement("INPUT");
+        radio1.setAttribute("type", "radio");
+        radio1.checked="checked";
     
-    //     label1.setAttribute("for", radio1);
-    //     label1.appendChild(radio1);
+        label1.setAttribute("for", radio1);
+        label1.appendChild(radio1);
     
-    //     firstTab2.appendChild(label1);
+        firstTab2.appendChild(label1);
 
-    //     const para = document.createElement("P");
-    //     para.textContent="paragraphy";
-    //     firstTab2.appendChild(para);
+        const para = document.createElement("P");
+        para.textContent="paragraphy";
+        firstTab2.appendChild(para);
         
     
-    // }
+    }
 
 
 
