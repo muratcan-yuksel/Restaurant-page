@@ -34,7 +34,7 @@
 //   functionTwo
 // }
 
-const labels = () => {
+const labels = (() => {
     const label1 = document.createElement("LABEL");
     label1.textContent="One";
 
@@ -45,11 +45,17 @@ const labels = () => {
     label1.setAttribute("for", radio1);
     label1.appendChild(radio1);
 
-    firstTab2.appendChild(label1);
+ 
+    const para = () => {
+       const pa= document.createElement("P");
+        pa.textContent="paragraphy";
+        return pa;
+    } 
+  
 
     
-
-}
+return {para}
+})();
 
 
 
@@ -63,9 +69,9 @@ const divTabs = () => {
     firstTab2.setAttribute("class", "tab-2");
 
 
-    const para = document.createElement("P");
-    para.textContent="paragraphy";
-    firstTab2.appendChild(para);
+    // const para = document.createElement("P");
+    // para.textContent="paragraphy";
+    firstTab2.appendChild(labels.para());
     //append it to the tabs
     tabs.appendChild(firstTab2);
     //get the 2nd tab-2
