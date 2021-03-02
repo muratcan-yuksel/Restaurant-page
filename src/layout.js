@@ -38,18 +38,27 @@ const labels = (() => {
     const labelOne =()=>{
         const label1= document.createElement("LABEL");
         label1.textContent="One";
-        return label1;
-    } 
 
-    const radioOne=()=>{
-       const radio1= document.createElement("INPUT");
+        const radio1= document.createElement("INPUT");
         radio1.setAttribute("type", "radio");
         radio1.checked="checked";
     
         label1.setAttribute("for", radio1);
-      return label1.appendChild(radio1);
+        label1.appendChild(radio1);
 
+
+        return radio1;
     } 
+
+    // const radioOne=()=>{
+    //    const radio1= document.createElement("INPUT");
+    //     radio1.setAttribute("type", "radio");
+    //     radio1.checked="checked";
+    
+    //     label1.setAttribute("for", radio1);
+    //     label1.appendChild(radio1);
+    //     return radio1;
+    // } 
 
  
     const para = () => {
@@ -62,6 +71,13 @@ const labels = (() => {
     
 return {para,labelOne}
 })();
+
+{/* <div>
+<h4>Tab One</h4>
+<p>Une cuisine qui nous fait #voyager du moyen-orient au plus large bassin #méditerranéen.Tout cela, dans une ambiance #conviale, situé dans un quartier vivant et multi-culturel. De la street food, de qualité, sur place et à emporter.</p>
+<p>On y mange quoi? Des #mezzes (#houmous au #tahin maison, des #boreks à la #feta aop, des #falafels aux fèves), des salades, des #pitas, bref du bon et du #faitmaison. Une #cuisine sensée qui laisse la part belle aux légumineuses et aux #légumes frais, dans le respect de la saisonnalité et des #saveurs. Des ingrédients secrets qui revisitent les grand classiques de la cuisine méditerranéenne.</p>
+<p>Le plus important pour nous? Rendre accessible une #cuisinesaine, gourmande et de qualité. Tout le monde a le droit de manger du #BON . Nous travaillons avec des fournisseurs et des producteurs exigeants qui nous offrent la possibilité de sublimer des ingrédients de première qualité.</p>
+</div> */}
 
 
 
