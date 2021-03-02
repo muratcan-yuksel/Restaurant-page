@@ -47,7 +47,7 @@ const labels = (() => {
         label1.appendChild(radio1);
 
 
-        return radio1;
+        return radio1,label1;
     } 
 
     // const radioOne=()=>{
