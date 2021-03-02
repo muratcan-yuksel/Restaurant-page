@@ -49,16 +49,29 @@ const labels = (() => {
         //set the attribute and append it
         label1.setAttribute("for", radio1);
         label1.appendChild(radio1);
-        
+
         return radio1,label1;
     } 
 
     const labelRadioTwo=()=>{
-
+        //create a label for the radio element
+        const label2= document.createElement("LABEL");
+        //the text content of the label
+        label2.textContent="Two";
+        //create the radio element
+        const radio2= document.createElement("INPUT");
+        radio2.setAttribute("type", "radio");
+        radio2.setAttribute("id", "tab2-2");
+        radio2.setAttribute("name", "tabs-two");
+        //set the attribute and append it
+        label2.setAttribute("for", radio2);
+        label2.appendChild(radio2);
+      
+        return radio2,label2;
 
     }
   
-return {labelRadioOne}
+return {labelRadioOne,labelRadioTwo}
 })();
 
 const firstPageContent = (()=>{
@@ -105,7 +118,7 @@ const divTabs = () => {
     const secondTab2= document.createElement("div");
     secondTab2.setAttribute("class", "tab-2");
     tabs.appendChild(secondTab2);
-
+    secondTab2.appendChild(labels.labelRadioTwo());
 
     return tabs;
 }
