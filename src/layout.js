@@ -35,15 +35,21 @@
 // }
 
 const labels = (() => {
-    const label1 = document.createElement("LABEL");
-    label1.textContent="One";
+    const labelOne =()=>{
+        const label1= document.createElement("LABEL");
+        label1.textContent="One";
+        return label1;
+    } 
 
-    const radio1= document.createElement("INPUT");
-    radio1.setAttribute("type", "radio");
-    radio1.checked="checked";
+    const radioOne=()=>{
+       const radio1= document.createElement("INPUT");
+        radio1.setAttribute("type", "radio");
+        radio1.checked="checked";
+    
+        label1.setAttribute("for", radio1);
+      return label1.appendChild(radio1);
 
-    label1.setAttribute("for", radio1);
-    label1.appendChild(radio1);
+    } 
 
  
     const para = () => {
@@ -54,7 +60,7 @@ const labels = (() => {
   
 
     
-return {para}
+return {para,labelOne}
 })();
 
 
@@ -71,7 +77,8 @@ const divTabs = () => {
 
     // const para = document.createElement("P");
     // para.textContent="paragraphy";
-    firstTab2.appendChild(labels.para());
+    // firstTab2.appendChild(labels.para());
+    firstTab2.appendChild(labels.labelOne());
     //append it to the tabs
     tabs.appendChild(firstTab2);
     //get the 2nd tab-2
