@@ -47,7 +47,8 @@ const labels = (() => {
         radio1.setAttribute("name", "tabs-two");
         radio1.checked="checked";
         //set the attribute and append it
-        label1.setAttribute("for", radio1);
+     label1.setAttribute("for", "#tab2-1");
+       label1.setAttribute("id", "label1");
         label1.appendChild(radio1);
 
         return radio1,label1;
