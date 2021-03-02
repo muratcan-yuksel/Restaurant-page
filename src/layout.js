@@ -81,7 +81,7 @@ const firstPageContent = (()=>{
 
             const div = document.createElement("div");
             div.appendChild(header4);
-
+            return div;
         }
 
         return {paragraphs}
@@ -99,7 +99,7 @@ const divTabs = () => {
     //append this first tab2 to the tabs
     tabs.appendChild(firstTab2);
 
-    
+    console.log(firstPageContent.paragraphs());
     firstTab2.appendChild(labels.labelRadioOne());
 
     firstTab2.appendChild(firstPageContent.paragraphs());
