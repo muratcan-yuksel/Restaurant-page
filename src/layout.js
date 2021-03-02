@@ -8,9 +8,13 @@
 
 // export default foo
 (function foo () {
-    console.log("fooo");
+    const container= document.getElementById("content");
+    const para = document.createElement("P");
+    para.textContent="hoofs";
+
     const pic = document.createElement("IMG");
    pic.setAttribute("src", "/TOP/Restaurant-page/pics/header.png");
+   pic.setAttribute("id", "header");
     document.body.appendChild(pic);
 
 })();
