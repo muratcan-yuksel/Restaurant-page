@@ -35,41 +35,27 @@
 // }
 
 const labels = (() => {
-    const labelOne =()=>{
+    const labelRadioOne =()=>{
+        //create a label for the radio element
         const label1= document.createElement("LABEL");
+        //the text content of the label
         label1.textContent="One";
-
+        //create the radio element
         const radio1= document.createElement("INPUT");
         radio1.setAttribute("type", "radio");
         radio1.checked="checked";
-    
+        //set the attribute and append it
         label1.setAttribute("for", radio1);
         label1.appendChild(radio1);
-
 
         return radio1,label1;
     } 
 
-    // const radioOne=()=>{
-    //    const radio1= document.createElement("INPUT");
-    //     radio1.setAttribute("type", "radio");
-    //     radio1.checked="checked";
-    
-    //     label1.setAttribute("for", radio1);
-    //     label1.appendChild(radio1);
-    //     return radio1;
-    // } 
-
  
-    const para = () => {
-       const pa= document.createElement("P");
-        pa.textContent="paragraphy";
-        return pa;
-    } 
   
 
     
-return {para,labelOne}
+return {labelRadioOne}
 })();
 
 {/* <div>
@@ -91,11 +77,9 @@ const divTabs = () => {
     firstTab2.setAttribute("class", "tab-2");
 
 
-    // const para = document.createElement("P");
-    // para.textContent="paragraphy";
-    // firstTab2.appendChild(labels.para());
-    firstTab2.appendChild(labels.labelOne());
-    //append it to the tabs
+    
+    firstTab2.appendChild(labels.labelRadioOne());
+    //append this first tab2 to the tabs
     tabs.appendChild(firstTab2);
     //get the 2nd tab-2
     const secondTab2= document.createElement("div");
