@@ -36,7 +36,15 @@
 const divTabs = () => {
     const tabs= document.createElement("div");
     tabs.setAttribute("class", "tabs");
+    //get the first tab-2
+    const firstTab2 = document.createElement("div");
+    firstTab2.setAttribute("class", "tab-2");
+    //append it to the tabs
+    tabs.appendChild(firstTab2);
+
+
     return tabs;
 }
+
 
 export {divTabs}
