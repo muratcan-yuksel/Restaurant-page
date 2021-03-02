@@ -10,5 +10,7 @@ import {divTabs} from './layout';
 (function getContent (){
     const container= document.querySelector("#content");
    // container.innerHTML="deneme"; WORKS!
+   console.log(divTabs());
+   container.appendChild(divTabs());
 
 })();

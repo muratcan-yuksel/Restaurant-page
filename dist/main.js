@@ -1,1 +1,1 @@
-(()=>{"use strict";document.querySelector("#content")})();
+(()=>{"use strict";const t=()=>{const t=document.createElement("div");return t.setAttribute("class","tabs"),t};!function(){const e=document.querySelector("#content");console.log(t()),e.appendChild(t())}()})();

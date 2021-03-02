@@ -35,7 +35,7 @@
 // }
 const divTabs = () => {
     const tabs= document.createElement("div");
-    tabs.setAttribute("id", "tabs");
+    tabs.setAttribute("class", "tabs");
     return tabs;
 }
 
