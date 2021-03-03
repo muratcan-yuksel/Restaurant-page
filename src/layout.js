@@ -100,12 +100,13 @@ const firstPageContent = (()=>{
             para3.textContent="Le plus important pour nous? Rendre accessible une cuisinesaine, gourmande et de qualité. Tout le monde a le droit de manger du BON . Nous travaillons avec des fournisseurs et des producteurs exigeants qui nous offrent la possibilité de sublimer des ingrédients de première qualité. "
         // create header and append the paragraphs into it
         const header4= document.createElement("H4");
-            header4.appendChild(para1);
-            header4.appendChild(para2);
-            header4.appendChild(para3);
+        header4.textContent="Tab one & two";
         //create an empty div and append the header into it
             const div = document.createElement("div");
             div.appendChild(header4);
+            div.appendChild(para1);
+            div.appendChild(para2);
+            div.appendChild(para3);
             return div;
         }
 
@@ -120,6 +121,12 @@ const headerImg=(()=>{
         return header
     }
     return {pic}
+})();
+
+const menu=(()=>{
+    const menuDiv = ()=>{
+
+    }
 })();
 
 
