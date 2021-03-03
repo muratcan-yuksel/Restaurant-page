@@ -134,7 +134,7 @@ const secondPageContent=(()=>{
     return {contact}
 })();
 
-const headerImg=(()=>{
+const headerImg=(()=>{ 
     const pic =()=>{
         const header= document.createElement("IMG");
         header.setAttribute("src", "/TOP/Restaurant-page/pics/header.png");
