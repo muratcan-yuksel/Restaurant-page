@@ -10,8 +10,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(), // Generates default index.html
     new HtmlWebpackPlugin({  // Also generate a test.html
-      filename: 'test.html',
-      template: 'src/assets/test.html'
+      filename: 'menu.html',
+      template: 'src/assets/menu.html'
     })
   ]
 };
