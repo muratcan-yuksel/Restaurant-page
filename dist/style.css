@@ -1,6 +1,9 @@
 
-html{
+#mainHtml{
     background-color:rgb(16, 124, 143) 
+}
+#body{
+  background-color: white;
 }
 #content{
     width:100%;
@@ -115,14 +118,21 @@ html{
       .tabs .tab-2:last-child [type="radio"]:checked + div {
         margin-left: -100%; }
 
-
-      
-
-        .images{
-          width:100%;
-          height:100%;
-          padding: 5%;
+        .menuImages{
          
+          display:flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .images{
+          width:40%;
+          height:40%;
+          padding: 5%;
+          
+        }
+        .button{
+          display:flex;
+          justify-content: center;
         }
 
      
