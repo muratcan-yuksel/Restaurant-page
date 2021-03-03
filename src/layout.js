@@ -145,13 +145,13 @@ const headerImg=(()=>{
 })();
 
 const menu = (()=>{
-    const menuButton= () =>{
+    const menuTitle= () =>{
         const menu= document.createElement("H4");
         menu.textContent= "Notre Menu";
        
         return menu;
     }
-    return {menuButton}
+    return {menuTitle}
 })();
 
 
