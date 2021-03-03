@@ -9,9 +9,14 @@ import {divTabs,headerImg, menu} from './layout';
 //get the contents div and append other things into it
 (function getContent (){
     const container= document.querySelector("#content");
-   // container.innerHTML="deneme"; WORKS!
+   
+    const buttonDiv= document.createElement("DIV");
+    buttonDiv.setAttribute("id", "buttonDiv");
+    
+
    container.appendChild(headerImg.pic());
-   container.appendChild(menu.menuButton());
+   container.appendChild(buttonDiv);
+   buttonDiv.appendChild(menu.menuButton());
    console.log(divTabs());
    container.appendChild(divTabs());
 
