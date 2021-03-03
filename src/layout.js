@@ -182,6 +182,14 @@ const menuImages=(()=>{
         veggie.setAttribute("src", "/TOP/Restaurant-page/pics/veggie.jpg");
         veggie.setAttribute("class", "images");
 
+        const dessert= document.createElement("IMG");
+        dessert.setAttribute("src", "/TOP/Restaurant-page/pics/dessert.jpg");
+        dessert.setAttribute("class", "images");
+
+        const cocktail= document.createElement("IMG");
+        cocktail.setAttribute("src", "/TOP/Restaurant-page/pics/cocktail.jpg");
+        cocktail.setAttribute("class", "images");
+
         
          //create an empty div and append the images into it
              const div = document.createElement("div");
@@ -190,6 +198,8 @@ const menuImages=(()=>{
              div.appendChild(pita);
              div.appendChild(borek);
              div.appendChild(veggie);
+             div.appendChild(dessert);
+             div.appendChild(cocktail);
 
              return div;
     }
