@@ -163,6 +163,7 @@ const menuImages=(()=>{
         //create a figcaption for each and every one
         //manually
         //repeating yourself
+        //figcatption doesn't show up anyway
         const falafelFig= document.createElement("FIGCAPTION");
         const falafelText= document.createTextNode("Passion falafels maison aux fèves");
         //append it
