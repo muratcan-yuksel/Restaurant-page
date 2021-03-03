@@ -127,6 +127,9 @@ const menu = (()=>{
     const menuButton= () =>{
         const button= document.createElement("BUTTON");
         button.textContent= "Notre Menu";
+        button.onclick= function () {
+            location.href="/TOP/Restaurant-page/dist/menu.html";
+        }
         return button;
     }
     return {menuButton}
