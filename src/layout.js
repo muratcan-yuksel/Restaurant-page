@@ -65,7 +65,7 @@ const labels = (() => {
         radio2.setAttribute("id", "tab2-2");
         radio2.setAttribute("name", "tabs-two");
         //set the attribute and append it
-        label2.setAttribute("for", radio2);
+        label2.setAttribute("for", "#tab2-2");
         label2.appendChild(radio2);
       
         return radio2,label2;
@@ -120,7 +120,7 @@ const divTabs = () => {
     secondTab2.setAttribute("class", "tab-2");
     tabs.appendChild(secondTab2);
     secondTab2.appendChild(labels.labelRadioTwo());
-
+secondTab2.appendChild(firstPageContent.paragraphs());
     return tabs;
 }
 
