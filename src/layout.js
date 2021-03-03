@@ -100,7 +100,7 @@ const firstPageContent = (()=>{
             para3.textContent="Le plus important pour nous? Rendre accessible une cuisinesaine, gourmande et de qualité. Tout le monde a le droit de manger du BON . Nous travaillons avec des fournisseurs et des producteurs exigeants qui nous offrent la possibilité de sublimer des ingrédients de première qualité. "
         // create header and append the paragraphs into it
         const header4= document.createElement("H4");
-        header4.textContent="Tab one & two";
+        header4.textContent="Tab one";
         //create an empty div and append the header into it
             const div = document.createElement("div");
             div.appendChild(header4);
@@ -125,8 +125,23 @@ const headerImg=(()=>{
 
 const menu=(()=>{
     const menuDiv = ()=>{
+        const falafel= document.createElement("IMG");
+        falafel.setAttribute("src", "/TOP/Restaurant-page/pics/falafel.jpg");
+        falafel.setAttribute("class", "images");
 
+
+
+         // create header and append the paragraphs into it
+         const header4= document.createElement("H4");
+         header4.textContent="Notre menu";
+         //create an empty div and append the header into it
+             const div = document.createElement("div");
+             div.appendChild(header4);
+             div.appendChild(falafel);
+
+             return div;
     }
+    return {menuDiv}
 })();
 
 
@@ -154,7 +169,7 @@ const divTabs = () => {
     secondTab2.appendChild(labels.radioTwo());
     //append the paragraphs (content)
     //this part will be replaced by flexbox anyway
-secondTab2.appendChild(firstPageContent.paragraphs());
+    secondTab2.appendChild(menu.menuDiv());
     return tabs;
 }
 
