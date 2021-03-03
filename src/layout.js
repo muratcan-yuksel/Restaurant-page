@@ -57,6 +57,7 @@ const labels = (() => {
         label2.textContent="Il est où le Shabada?";
        //set the attribute and append it
         label2.setAttribute("for", "tab2-2");
+        label2.setAttribute("id", "label2");
        
       
         return label2;
