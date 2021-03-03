@@ -8,7 +8,7 @@
 #content{
     width:100%;
     height:100%;
-}
+  }
 #header{
     width:100%;
     height:80vh;
@@ -131,6 +131,10 @@
           
         }
         .button{
+          display:flex;
+          justify-content: center;
+        }
+        #buttonDiv{
           display:flex;
           justify-content: center;
         }
