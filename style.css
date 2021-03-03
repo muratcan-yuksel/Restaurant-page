@@ -115,4 +115,8 @@ html{
       .tabs .tab-2:last-child [type="radio"]:checked + div {
         margin-left: -100%; }
 
-        
+        .images{
+          width:40%;
+          height:40%;
+          padding: 5%;
+        }
