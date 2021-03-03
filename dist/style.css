@@ -131,6 +131,11 @@ p{
   font-size: 2em;
   font-weight: 900;
 }
+h4{
+  color:white;
+  font-size: 2em;
+  font-weight: 900;
+}
 .imagesDiv{
   display:flex;
   flex-wrap: wrap;
