@@ -125,9 +125,24 @@ const headerImg=(()=>{
 
 const menu=(()=>{
     const menuDiv = ()=>{
+        //add pictures
         const falafel= document.createElement("IMG");
         falafel.setAttribute("src", "/TOP/Restaurant-page/pics/falafel.jpg");
         falafel.setAttribute("class", "images");
+
+        const pita= document.createElement("IMG");
+        pita.setAttribute("src", "/TOP/Restaurant-page/pics/pita.jpg");
+        pita.setAttribute("class", "images");
+
+        const main= document.createElement("IMG");
+        main.setAttribute("src", "/TOP/Restaurant-page/pics/main.png");
+        main.setAttribute("class", "images");
+
+        const veggie= document.createElement("IMG");
+        veggie.setAttribute("src", "/TOP/Restaurant-page/pics/veggie.jpg");
+        veggie.setAttribute("class", "images");
+
+        
 
 
 
@@ -138,6 +153,9 @@ const menu=(()=>{
              const div = document.createElement("div");
              div.appendChild(header4);
              div.appendChild(falafel);
+             div.appendChild(pita);
+             div.appendChild(main);
+             div.appendChild(veggie);
 
              return div;
     }
