@@ -138,5 +138,9 @@
           display:flex;
           justify-content: center;
         }
-
-     
+p{
+  color:white;
+}
+#label1, #label2{
+  color:white;
+}
