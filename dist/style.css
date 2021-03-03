@@ -89,10 +89,10 @@
       .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
       .tabs [class*=" tab"] [type="radio"]:hover,
       .tabs [class*=" tab"] [type="radio"]:focus {
-        border-bottom: 1px solid #2dfd26; }
+        border-bottom: 1px solid #fdd212; }
       .tabs [class^="tab"] [type="radio"]:checked,
       .tabs [class*=" tab"] [type="radio"]:checked {
-        border-bottom: 2px solid #2dfd26; }
+        border-bottom: 2px solid #fdd212;}
       .tabs [class^="tab"] [type="radio"]:checked + div,
       .tabs [class*=" tab"] [type="radio"]:checked + div {
         opacity: 1; }
@@ -135,6 +135,13 @@ p{
   display:flex;
   flex-wrap: wrap;
 }
+@media (max-width: 800px) {
+  .imagesDiv {
+    flex-direction: column;
+  }
+}
+
+
 .images{
 width:42%;
 height:42%;
