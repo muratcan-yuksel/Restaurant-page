@@ -129,6 +129,14 @@ const menu=(()=>{
         const falafel= document.createElement("IMG");
         falafel.setAttribute("src", "/TOP/Restaurant-page/pics/falafel.jpg");
         falafel.setAttribute("class", "images");
+        //create a figcaption for each and every one
+        //manually
+        //repeating yourself
+        const falafelFig= document.createElement("FIGCAPTION");
+        const falafelText= document.createTextNode("Passion falafels maison aux fèves");
+        //append it
+        falafelFig.appendChild(falafelText);
+        falafel.appendChild(falafelFig);
 
         const pita= document.createElement("IMG");
         pita.setAttribute("src", "/TOP/Restaurant-page/pics/pita.jpg");
@@ -151,6 +159,7 @@ const menu=(()=>{
          header4.textContent="Notre menu";
          //create an empty div and append the header into it
              const div = document.createElement("div");
+             div.setAttribute("class", "imagesDiv");
              div.appendChild(header4);
              div.appendChild(falafel);
              div.appendChild(pita);
