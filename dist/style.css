@@ -1,6 +1,6 @@
 
 html{
-   /* background-color:rgb(16, 124, 143) */
+    background-color:rgb(16, 124, 143) 
 }
 #content{
     width:100%;
@@ -86,10 +86,10 @@ html{
       .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
       .tabs [class*=" tab"] [type="radio"]:hover,
       .tabs [class*=" tab"] [type="radio"]:focus {
-        border-bottom: 1px solid #fd264f; }
+        border-bottom: 1px solid #2dfd26; }
       .tabs [class^="tab"] [type="radio"]:checked,
       .tabs [class*=" tab"] [type="radio"]:checked {
-        border-bottom: 2px solid #fd264f; }
+        border-bottom: 2px solid #2dfd26; }
       .tabs [class^="tab"] [type="radio"]:checked + div,
       .tabs [class*=" tab"] [type="radio"]:checked + div {
         opacity: 1; }
@@ -119,8 +119,10 @@ html{
       
 
         .images{
-          width:60%;
-          height:30%;
+          width:100%;
+          height:100%;
           padding: 5%;
          
         }
+
+     

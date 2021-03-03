@@ -40,7 +40,7 @@ const labels = (() => {
         //create a label for the radio element
         const label1= document.createElement("LABEL");
         //the text content of the label
-        label1.textContent="One";
+        label1.textContent="Le Shabada, c'est quoi?";
         //set the attribute and append it
         label1.setAttribute("for", "tab2-1");
         label1.setAttribute("id", "label1");
@@ -54,7 +54,7 @@ const labels = (() => {
         //create a label for the radio element
         const label2= document.createElement("LABEL");
         //the text content of the label
-        label2.textContent="Two";
+        label2.textContent="Il est où le Shabada?";
        //set the attribute and append it
         label2.setAttribute("for", "tab2-2");
        
@@ -100,7 +100,7 @@ const firstPageContent = (()=>{
             para3.textContent="Le plus important pour nous? Rendre accessible une cuisinesaine, gourmande et de qualité. Tout le monde a le droit de manger du BON . Nous travaillons avec des fournisseurs et des producteurs exigeants qui nous offrent la possibilité de sublimer des ingrédients de première qualité. "
         // create header and append the paragraphs into it
         const header4= document.createElement("H4");
-        header4.textContent="Tab one";
+        //header4.textContent="Tab one";
         //create an empty div and append the header into it
             const div = document.createElement("div");
             div.appendChild(header4);
@@ -122,7 +122,7 @@ const headerImg=(()=>{
     }
     return {pic}
 })();
-
+/*
 const menu=(()=>{
     const menuDiv = ()=>{
         //add pictures
@@ -150,10 +150,6 @@ const menu=(()=>{
         veggie.setAttribute("src", "/TOP/Restaurant-page/pics/veggie.jpg");
         veggie.setAttribute("class", "images");
 
-        
-
-
-
          // create header and append the paragraphs into it
          const header4= document.createElement("H4");
          header4.textContent="Notre menu";
@@ -170,7 +166,7 @@ const menu=(()=>{
     }
     return {menuDiv}
 })();
-
+*/
 
 const divTabs = () => {
     const tabs= document.createElement("div");
@@ -196,7 +192,7 @@ const divTabs = () => {
     secondTab2.appendChild(labels.radioTwo());
     //append the paragraphs (content)
     //this part will be replaced by flexbox anyway
-    secondTab2.appendChild(menu.menuDiv());
+    //secondTab2.appendChild(menu.menuDiv());
     return tabs;
 }
 
