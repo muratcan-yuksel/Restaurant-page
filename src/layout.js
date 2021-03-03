@@ -35,44 +35,57 @@
 // }
 
 const labels = (() => {
-    const labelRadioOne =()=>{
+
+    const labelOne =()=>{
         //create a label for the radio element
         const label1= document.createElement("LABEL");
         //the text content of the label
         label1.textContent="One";
+        //set the attribute and append it
+        label1.setAttribute("for", "tab2-1");
+        label1.setAttribute("id", "label1");
+        
+
+        return label1;
+    } 
+
+
+    const labelTwo=()=>{
+        //create a label for the radio element
+        const label2= document.createElement("LABEL");
+        //the text content of the label
+        label2.textContent="Two";
+       //set the attribute and append it
+        label2.setAttribute("for", "tab2-2");
+       
+      
+        return label2;
+
+    }
+
+    const radioOne=()=>{
         //create the radio element
         const radio1= document.createElement("INPUT");
         radio1.setAttribute("type", "radio");
         radio1.setAttribute("id", "tab2-1");
         radio1.setAttribute("name", "tabs-two");
         radio1.checked="checked";
-        //set the attribute and append it
-     label1.setAttribute("for", "#tab2-1");
-       label1.setAttribute("id", "label1");
-        label1.appendChild(radio1);
 
-        return radio1,label1;
-    } 
+        return radio1;
+  }
 
-    const labelRadioTwo=()=>{
-        //create a label for the radio element
-        const label2= document.createElement("LABEL");
-        //the text content of the label
-        label2.textContent="Two";
-        //create the radio element
-        const radio2= document.createElement("INPUT");
-        radio2.setAttribute("type", "radio");
-        radio2.setAttribute("id", "tab2-2");
-        radio2.setAttribute("name", "tabs-two");
-        //set the attribute and append it
-        label2.setAttribute("for", "#tab2-2");
-        label2.appendChild(radio2);
-      
-        return radio2,label2;
+  const radioTwo=()=>{
+     //create the radio element
+     const radio2= document.createElement("INPUT");
+     radio2.setAttribute("type", "radio");
+     radio2.setAttribute("id", "tab2-2");
+     radio2.setAttribute("name", "tabs-two");
+     
 
-    }
+    return radio2;
+}
   
-return {labelRadioOne,labelRadioTwo}
+return {labelOne,labelTwo,radioOne,radioTwo}
 })();
 
 const firstPageContent = (()=>{
@@ -111,7 +124,9 @@ const divTabs = () => {
     //append this first tab2 to the tabs
     tabs.appendChild(firstTab2);
     //append the radio and the label
-    firstTab2.appendChild(labels.labelRadioOne());
+    firstTab2.appendChild(labels.labelOne());
+
+    firstTab2.appendChild(labels.radioOne());
     //append the paragraphs
     firstTab2.appendChild(firstPageContent.paragraphs());
    
@@ -119,7 +134,9 @@ const divTabs = () => {
     const secondTab2= document.createElement("div");
     secondTab2.setAttribute("class", "tab-2");
     tabs.appendChild(secondTab2);
-    secondTab2.appendChild(labels.labelRadioTwo());
+    secondTab2.appendChild(labels.labelTwo());
+
+    secondTab2.appendChild(labels.radioTwo());
 secondTab2.appendChild(firstPageContent.paragraphs());
     return tabs;
 }
