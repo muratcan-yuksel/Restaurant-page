@@ -1,4 +1,4 @@
-import {divTabs,headerImg} from './layout';
+import {divTabs,headerImg, menu} from './layout';
 
 // function foo () {
 //     const element= document.createElement('div');
@@ -11,6 +11,7 @@ import {divTabs,headerImg} from './layout';
     const container= document.querySelector("#content");
    // container.innerHTML="deneme"; WORKS!
    container.appendChild(headerImg.pic());
+   container.appendChild(menu.menuButton());
    console.log(divTabs());
    container.appendChild(divTabs());
 

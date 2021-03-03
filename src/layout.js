@@ -122,6 +122,15 @@ const headerImg=(()=>{
     }
     return {pic}
 })();
+
+const menu = (()=>{
+    const menuButton= () =>{
+        const button= document.createElement("BUTTON");
+        button.textContent= "Notre Menu";
+        return button;
+    }
+    return {menuButton}
+})();
 /*
 const menu=(()=>{
     const menuDiv = ()=>{
@@ -198,4 +207,4 @@ const divTabs = () => {
 
 
 
-    export {divTabs,headerImg}
+    export {divTabs,headerImg, menu}
