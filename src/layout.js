@@ -123,20 +123,22 @@ const divTabs = () => {
     firstTab2.setAttribute("class", "tab-2");
     //append this first tab2 to the tabs
     tabs.appendChild(firstTab2);
-    //append the radio and the label
+    //append the radio and the label separately
     firstTab2.appendChild(labels.labelOne());
-
     firstTab2.appendChild(labels.radioOne());
-    //append the paragraphs
+    //append the paragraphs (content)
     firstTab2.appendChild(firstPageContent.paragraphs());
    
     //get the 2nd tab-2
     const secondTab2= document.createElement("div");
     secondTab2.setAttribute("class", "tab-2");
+    //append this tab to the container tab (for tabs)
     tabs.appendChild(secondTab2);
+  //append the radio and the label separately
     secondTab2.appendChild(labels.labelTwo());
-
     secondTab2.appendChild(labels.radioTwo());
+    //append the paragraphs (content)
+    //this part will be replaced by flexbox anyway
 secondTab2.appendChild(firstPageContent.paragraphs());
     return tabs;
 }
