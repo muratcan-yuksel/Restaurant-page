@@ -173,28 +173,21 @@ const menuImages=(()=>{
         pita.setAttribute("src", "/TOP/Restaurant-page/pics/pita.jpg");
         pita.setAttribute("class", "images");
 
-        const main= document.createElement("IMG");
-        main.setAttribute("src", "/TOP/Restaurant-page/pics/borek.jpg");
-        main.setAttribute("class", "images");
+        const borek= document.createElement("IMG");
+        borek.setAttribute("src", "/TOP/Restaurant-page/pics/borek.jpg");
+        borek.setAttribute("class", "images");
 
         const veggie= document.createElement("IMG");
         veggie.setAttribute("src", "/TOP/Restaurant-page/pics/veggie.jpg");
         veggie.setAttribute("class", "images");
 
         
-
-
-
-         // create header and append the paragraphs into it
-         const header4= document.createElement("H4");
-         header4.textContent="Notre menu";
-         //create an empty div and append the header into it
+         //create an empty div and append the images into it
              const div = document.createElement("div");
              div.setAttribute("class", "imagesDiv");
-             div.appendChild(header4);
              div.appendChild(falafel);
              div.appendChild(pita);
-             div.appendChild(main);
+             div.appendChild(borek);
              div.appendChild(veggie);
 
              return div;
@@ -233,4 +226,4 @@ const divTabs = () => {
 
 
 
-    export {divTabs,headerImg, menu}
+    export {divTabs,headerImg, menu, menuImages}

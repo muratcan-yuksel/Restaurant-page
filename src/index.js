@@ -1,4 +1,4 @@
-import {divTabs,headerImg, menu} from './layout';
+import {divTabs,headerImg, menu, menuImages} from './layout';
 
 // function foo () {
 //     const element= document.createElement('div');
@@ -15,11 +15,12 @@ import {divTabs,headerImg, menu} from './layout';
     //append the header image
    container.appendChild(headerImg.pic());
   
-   //add the actual button to the button div
+   //add the menu from layout.js to the menu Div created above
    menuTitleDiv.appendChild(menu.menuTitle());
   //append the tabs divs into container
    container.appendChild(divTabs());
-    //append the button div so that you can center it via flexbox
+    //append the menu title div so that you can center it via flexbox
     container.appendChild(menuTitleDiv);
+    container.appendChild(menuImages.menuDiv());
 
 })();
