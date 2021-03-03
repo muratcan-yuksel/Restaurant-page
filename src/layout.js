@@ -84,8 +84,32 @@ const labels = (() => {
 
     return radio2;
 }
+
+const labelThree=()=>{
+    //create a label for the radio element
+    const label3= document.createElement("LABEL");
+    //the text content of the label
+    label3.textContent="Three";
+   //set the attribute and append it
+    label3.setAttribute("for", "tab2-3");
+   
   
-return {labelOne,labelTwo,radioOne,radioTwo}
+    return label3;
+
+}
+
+const radioThree=()=>{
+    //create the radio element
+    const radio3= document.createElement("INPUT");
+    radio3.setAttribute("type", "radio");
+    radio3.setAttribute("id", "tab2-3");
+    radio3.setAttribute("name", "tabs-three");
+    
+
+    return radio3;
+}
+  
+return {labelOne,labelTwo,radioOne,radioTwo, labelThree,radioThree}
 })();
 
 const firstPageContent = (()=>{
@@ -112,7 +136,15 @@ const firstPageContent = (()=>{
         return {paragraphs}
 })();
 
-
+const headerImg=(()=>{
+    const pic =()=>{
+        const header= document.createElement("IMG");
+        header.setAttribute("src", "/TOP/Restaurant-page/pics/header.png");
+        header.setAttribute("id", "header");
+        return header
+    }
+    return {pic}
+})();
 
 
 const divTabs = () => {
@@ -140,14 +172,21 @@ const divTabs = () => {
     //append the paragraphs (content)
     //this part will be replaced by flexbox anyway
 secondTab2.appendChild(firstPageContent.paragraphs());
+
+ //get the 2nd tab-2
+ const secondTab3= document.createElement("div");
+ secondTab3.setAttribute("class", "tab-2");
+ //append this tab to the container tab (for tabs)
+ tabs.appendChild(secondTab3);
+//append the radio and the label separately
+ secondTab3.appendChild(labels.labelThree());
+ secondTab3.appendChild(labels.radioThree());
+ //append the paragraphs (content)
+ //this part will be replaced by flexbox anyway
+secondTab3.appendChild(firstPageContent.paragraphs());
     return tabs;
 }
 
 
 
-    
-
-
-
-
-    export {divTabs}
+    export {divTabs,headerImg}
