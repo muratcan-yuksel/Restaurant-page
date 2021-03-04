@@ -18,7 +18,7 @@
 //     container.appendChild(para);
 
 //     const pic = document.createElement("IMG");
-//    pic.setAttribute("src", "/pics/header.png");
+//    pic.setAttribute("src", "pics/header.png");
 //    pic.setAttribute("id", "header");
 //     // document.body.appendChild(pic);
 //     return pic;
@@ -137,7 +137,7 @@ const secondPageContent=(()=>{
 const headerImg=(()=>{ 
     const pic =()=>{
         const header= document.createElement("IMG");
-        header.setAttribute("src", "/pics/header.png");
+        header.setAttribute("src", "pics/header.png");
         header.setAttribute("id", "header");
         return header
     }
@@ -158,7 +158,7 @@ const menuImages=(()=>{
     const menuDiv = ()=>{
         //add pictures
         const falafel= document.createElement("IMG");
-        falafel.setAttribute("src", "/pics/falafel.jpg");
+        falafel.setAttribute("src", "pics/falafel.jpg");
         falafel.setAttribute("class", "images");
         //create a figcaption for each and every one
         //manually
@@ -171,23 +171,23 @@ const menuImages=(()=>{
         falafel.appendChild(falafelFig);
 
         const pita= document.createElement("IMG");
-        pita.setAttribute("src", "/pics/pita.jpg");
+        pita.setAttribute("src", "pics/pita.jpg");
         pita.setAttribute("class", "images");
 
         const borek= document.createElement("IMG");
-        borek.setAttribute("src", "/pics/borek.jpg");
+        borek.setAttribute("src", "pics/borek.jpg");
         borek.setAttribute("class", "images");
 
         const veggie= document.createElement("IMG");
-        veggie.setAttribute("src", "/pics/veggie.jpg");
+        veggie.setAttribute("src", "pics/veggie.jpg");
         veggie.setAttribute("class", "images");
 
         const dessert= document.createElement("IMG");
-        dessert.setAttribute("src", "/pics/dessert.jpg");
+        dessert.setAttribute("src", "pics/dessert.jpg");
         dessert.setAttribute("class", "images");
 
         const cocktail= document.createElement("IMG");
-        cocktail.setAttribute("src", "/pics/cocktail.jpg");
+        cocktail.setAttribute("src", "pics/cocktail.jpg");
         cocktail.setAttribute("class", "images");
 
         
